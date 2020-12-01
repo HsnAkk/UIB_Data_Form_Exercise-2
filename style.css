@@ -1,0 +1,121 @@
+/* Reset CSS */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-image: url("./images/background.jpg");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat; */
+
+  background: black url("./images/background.jpg") top center / cover no-repeat;
+
+  font-size: 20px;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 300;
+  text-align: center;
+  color: #333;
+}
+
+#container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+#header {
+  margin-top: 20px;
+  width: 100%;
+}
+
+h1,
+h2 {
+  font-weight: normal;
+  padding: 0 0 10px;
+  margin: 0 0 10px;
+}
+
+.content-block {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  margin: 20px 0;
+}
+
+#content {
+  border: 10px solid black;
+}
+
+form {
+  text-align: left;
+  width: 300px;
+  margin: 20px auto 0;
+}
+
+form label {
+  display: block;
+  width: 300px;
+  padding: 5px;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+  background: #333;
+  color: white;
+}
+
+form input {
+  display: block;
+  width: 300px;
+  padding: 5px;
+  margin: 0 0 10px;
+  border: none;
+  font-size: 22px;
+  font-family: Georgia, Times, serif;
+  font-style: italic;
+  color: #333;
+}
+form input:focus {
+  outline: 0;
+}
+
+form input[type="submit"] {
+  background: #333;
+  color: white;
+  cursor: pointer;
+  width: 300px;
+}
+
+#footer {
+  background: black;
+  padding: 20px;
+  color: #d5d5d5;
+}
+
+@media screen and (max-width: 600px) {
+  #container {
+    width: 100%;
+    padding: 20px;
+  }
+  #header a img {
+    width: 100%;
+  }
+  form {
+    width: 100%;
+  }
+
+  form label {
+    width: 100%;
+  }
+
+  form input {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  form input[type="submit"] {
+    width: 100%;
+  }
+}
